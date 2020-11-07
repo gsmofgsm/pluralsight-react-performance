@@ -1,6 +1,6 @@
 import React from "react";
 
-export const AddButton = ({ onClick }) => (
+export const AddButton = React.memo(({ onClick }) => (
   <button
     onClick={onClick}
     style={{
@@ -18,4 +18,4 @@ export const AddButton = ({ onClick }) => (
   >
     Add
   </button>
-);
+));
