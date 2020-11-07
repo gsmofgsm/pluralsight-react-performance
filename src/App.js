@@ -64,8 +64,7 @@ function App() {
   useEffect(() => {
     if (height && width) {
       const parsedCards = parseData();
-      positionCards(parsedCards, width, height);
-      setCards({ ...parsedCards });
+      setCards(positionCards(parsedCards, width, height));
     }
   }, [height, width]);
 
